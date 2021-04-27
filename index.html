@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">Library App</div>
+    <div class="add-new-book">Add New Book</div>
+    <div class="books-container"></div>
+    <div class="popup-container centered">
+      <div class="close">X</div>
+      <div class="popup">
+        <fieldset>
+          <legend>Enter Book Details</legend>
+          <div><input type="text" class="title" placeholder="Title"></div>
+          <div><input type="text" class="author" placeholder="Author"></div>
+          <div><input type="number" min="1" class="no-pages" placeholder="Pages"></div>
+          <div>Mark as read <input class="read" type="checkbox"></div>
+          <div><button class="add">Add</button></div>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+  <div class="footer">Supports local strorage</div>
+  <script src="script.js"></script>
+</body>
+</html>
