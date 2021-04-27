@@ -26,15 +26,18 @@ body {
   font-weight: bold;
 }
 
-.add-new-book {
-  border: 1px solid dodgerblue;
+.options {
+  display: grid;
+}
+
+.add-new-book,
+.clear-local-storage {
   padding: 30px;
   margin: auto;
   margin-top: 20px;
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
-  background: cornflowerblue;
   color: white;
   font-size: large;
   font-weight: 900;
@@ -42,9 +45,16 @@ body {
   width: 200px;
 }
 
+.add-new-book {
+  background: cornflowerblue;
+}
+
+.clear-local-storage {
+  background: tomato;
+}
+
 .books-container {
   display: flex;
-  grid-template-columns: repeat(4, 1fr);
   column-gap: 10px;
   row-gap: 10px;
   flex-wrap: wrap;

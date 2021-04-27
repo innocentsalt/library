@@ -7,6 +7,15 @@ addNewBook.addEventListener('click', () => {
   popupContainer.style.display = 'block';
 });
 
+const clearLocalStorage = document.querySelector('.clear-local-storage');
+clearLocalStorage.addEventListener('click', () => {
+  if (localStorage.getItem('storedBooks')) {
+    localStorage.setItem('storedBooks', JSON.stringify([]));
+    localLibrary = [];
+    update();
+  }
+});
+
 const close = document.querySelector('.close');
 close.addEventListener('click', () => {
   popupContainer.style.display = 'none';
@@ -72,6 +81,7 @@ function createBookDOM(book) {
         localLibrary.splice(i, 1);
         updateLocalStorage();
         update();
+        break;
       }
     }
   });
